@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Анкета</title>
+    <link rel="stylesheet" href="style6.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Анкета посетителя</h1>
+    <form>
+        <legend class="legendName">Контактная информация</legend>
+        <label class="Name">Имя</label>
+        <br>
+        <input  type="text" name="Name" maxlength="32"> </input> </br>
+        <label class="Name">Телефон</label>
+        <br>
+        <input  type="text" name="Phone" maxlength="11"> </input> </br>
+        <label class="Name">E-mail</label>
+        <br>
+        <input  type="email" name="Email" maxlength="11"> </input>
+        </br>
+        <label class="Name">Дата посещения</label>
+        <br>
+        <input  type="date" name="Date"> </input> </br>
+    </form>
+    <form>
+        <legend class="legendName">Персональная информация</legend>
+        <label class="Name">Возраст</label>
+        <br>
+        <input  type="number" maxlength="32" min="0" > </input>
+        </br>
+        <label class="Name">Любимая кухня</label>
+        <br>
+        <select  name="Kitchen[]">
+            <option selected disabled>Ваша любимая кухня</option>
+            <option value="Русская">Русская</option>
+            <option value="Американская">Американская</option>
+            <option value="Азиатская">Азиатская</option>
+            <option value="Узбексая">Узбексая</option>
+        </select>
+        <br>
+        <label class="Name">Дата посещения</label>
+        <br>
+        <input  type="date" name="Date"> </input> </br>
+        <label class="Name">Какие блюда вы бы хотели увидеть в меню</label>
+        <br>
+        <textarea class="BigInput" name=""></textarea> </br>
+        <div>
+            <label class="Name">Почему вы выбрали наше заведение?</label>
+            <br>
+            <div class="radioButton">
+                <img src="https://cdn-icons-png.flaticon.com/512/5606/5606108.png" />
+                <input type="radio" id="contactChoice1" name="choose" value="email">
+                <label for="contactChoice1">Недалеко от работы</label> <br>
+                <img src="https://cdn-icons-png.flaticon.com/512/5606/5606108.png" />
+                <input type="radio" id="contactChoice2" name="choose" value="phone">
+                <label for="contactChoice2">Реклама</label><br>
+                <img src="https://cdn-icons-png.flaticon.com/512/5606/5606108.png" />
+                <input type="radio" id="contactChoice3" name="choose" value="mail">
+                <label for="contactChoice3">Посоветовали</label> <br>
+            </div>
+        </div>
+
+        <div>
+            <label class="Name">Вы будете рекомендовать наше заведение?</label>
+            <br>
+            <div class="radiobutton">
+                <img src="http://www.rib.net/forum/images/sk/misc/sticky.gif" />
+                <input type="radio" id="contactChoice1" name="recommendation" value="email">
+                <label for="contactChoice1">Да</label> <br>
+                <img src="https://cdn-icons-png.flaticon.com/512/5606/5606108.png" />
+                <input type="radio" id="contactChoice2" name="recommendation" value="phone">
+                <label for="contactChoice2">Нет</label><br>
+            </div>
+        </div>
+
+    </form>
+    <button>Сброс</button>
+    <button>Отправить форму</button>
+</body>
+
+</html>

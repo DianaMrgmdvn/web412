@@ -1,0 +1,22 @@
+.year {
+    text-align: center;
+    font-size: 0.9em;
+    padding-top: 5px; 
+}
+body {
+    text-align:center;
+}
+h1 {
+    text-align: center;
+    font-weight:normal;
+}
+.onlyPoem {
+    font: 1em 'Courier', 'Courier New', 'mono';
+    white-space:pre;
+}
+.allText {
+    text-align:left;
+    margin-left: auto;
+    margin-right: auto;
+    display:inline-block;
+}

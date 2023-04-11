@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+
+}
+
+.header-title {
+    width: 20%;
+}
+
+.header-menu {
+    width: 6s0%;
+}
+
+.header-search {
+    width: 20%;
+}

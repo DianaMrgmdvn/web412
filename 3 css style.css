@@ -1,0 +1,18 @@
+.block {
+  border: 1px solid #000;
+  float: left;
+}
+.block1 {
+  background-color: #fff;
+  color: #000;
+  font-size: 48px;
+  float: left;
+  padding: 10px;
+}
+.block2 {
+  background-color: #000;
+  color: #fff;
+  font-size: 48px;
+  float: left;
+  padding: 10px;
+}

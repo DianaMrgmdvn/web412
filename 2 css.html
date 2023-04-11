@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TEX</title>
+        <style>
+            div{
+                margin-top: 10pt;
+            }
+            .background{
+                background-color: rgb(233, 230, 230);
+            }
+            .comment{
+                color: rgb(138, 138, 138);
+            }
+            .comment span{
+                background-color: rgb(233, 230, 230);
+                color: black;
+            }
+            .var{
+                font-weight: 1000;
+            }
+            .greenColor {
+              color: rgb(0, 212, 0)
+            }
+            .redColor{
+                color: red;
+            }
+            .blueColor{
+                color: rgb(0, 132, 255);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h2>Creating chat</h2>
+        <div class="comment">
+            To create a chart, we need to instantiate the <span>Chart</span> class. To do this, wee need<br>
+            to pass in the 2d context of where we want to draw the chart. Here's an <br>example.
+        </div>
+        <div class="background">
+           <span class="blueColor">&lt;canvas</span> <span class="greenColor">id=</span><span class="redColor">"myChart"</span><span class="greenColor">width=</span><span class="redColor">"400"</span><span class="greenColor">height= </span><span class="redColor">"400"</span><span class="blueColor">&gt;&lt;/canvas&gt;</span>
+        </div>
+        <div class="background">
+            <span class="comment">// Get the context of the canvas element we want to select</span><br>
+            <span class="var">var</span> ctx =  <span class="blueColor">document</span> .getElementByld(<span class="redColor">"myChart"</span>).getContext(<span class="redColor">"2d"</span>");<br>
+            <span class="var">var</span> myNewChart - <span class="var">new</span> Chart(ctx).PolarArea(data);
+        </div>
+        <div class="comment">
+            We can also get the context of our canvas with JQuery. To do this, we need to <br>
+            get the DOM node out of the jQuery collection, and call the <span>getContext("2d")</span><br>
+            method on that.
+        </div>
+        <div class="background">
+            <span class="comment">// Get context with jQuery - using jQuery's .get() method</span><br>
+            <span class="var">var</span> ctx = $(<span class="redColor">"#myChart"</span>).get(<span class="blueColor">0</span>).GetContext(<span class="redColor">"2d"</span>);<br>
+            <span class="comment">// This will get the first returned node in the jQuery collection</span><br>
+            <span class="var">var</span> myNewChart = <span class="var">new</span> Chart(ctx);<br>
+        </div>
+    </body>
+</html>   

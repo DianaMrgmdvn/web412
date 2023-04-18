@@ -14,3 +14,38 @@
 .header-search {
     width: 20%;
 }
+
+.header-menu {
+    width: 60%;
+}
+
+.header-search {
+    width: 20%;
+}
+
+.header-menu .menu {
+    list-style: none;
+}
+
+.header-menu .menu .menu-item {
+    float: left;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header-menu .menu .menu-item.active {
+    background-color: aqua;
+}
+.header-menu .menu .menu-item:hover {
+    background-color: black;
+}
+.header-search .form-search {
+    height: 100%;
+}
+
+.header-search .form-input {
+    height: 75%;
+    margin: 5px;
+    padding: 0;
+    border: 0;
+}
